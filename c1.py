@@ -191,13 +191,13 @@ if __name__ == '__main__':
     # print 'hello nowcoder'
     '''
     # comment
-    # demo_string()
-    # demo_operation()
-    # demo_buildinfunction()
-    # demo_condition()
-    # demo_list()
-    # demo_dict()
-    # demo_set()
-    # demo_exception()
-    # demo_random()
+    demo_string()
+    demo_operation()
+    demo_buildinfunction()
+    demo_condition()
+    demo_list()
+    demo_dict()
+    demo_set()
+    demo_exception()
+    demo_random()
     demo_re()
