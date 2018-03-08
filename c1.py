@@ -30,14 +30,15 @@ def demo_operation():
 
 def demo_buildinfunction():
     print 1, max(2, 1), min(5, 3)
-    print 2, len('xxx'), len([1, 2, 3])
+    print 2, len('xxx'), len([1, 2, 3, 4, 5, 6])
     print 3, abs(-2)
-    print 4, range(1, 10, 3)
+    print 4, range(1, 13, 3)
     print 5, dir(list)
     x = 2
-    print 6, eval('x+3')
+    y = 7
+    print 6, eval('x*y')
     print 7, chr(65), ord('a')
-    print 8, divmod(11, 3)
+    print 8, divmod(11, 2)
 
 
 def demo_condition():
@@ -158,6 +159,7 @@ def demo_random():
     random.shuffle(a)
     print 5, a
 
+
 def demo_re():
     str = 'abc123def12gh15'
     p1 = re.compile('[\d]+')
@@ -169,15 +171,15 @@ def demo_re():
     p3 = re.compile('[\w]+@[gmail|qq]+\.com')
     print p3.findall(str2)
 
-    str3='<html><h>title</h><body>xxx</body></html>'
-    p4=re.compile('<h>[^<]+</h>')
+    str3 = '<html><h>title</h><body>xxx</body></html>'
+    p4 = re.compile('<h>[^<]+</h>')
     print p4.findall(str3)
-    p5=re.compile('<h>([^<]+)</h><body>([^<]+)</body>')
+    p5 = re.compile('<h>([^<]+)</h><body>([^<]+)</body>')
     print p5.findall(str3)
 
-    str4='xxx2018-03-01yyy'
-    p6=re.compile('\d\d\d\d-\d\d-\d\d')
-    p7=re.compile('\d{4}-\d{2}-\d{2}')
+    str4 = 'xxx2018-03-01yyy'
+    p6 = re.compile('\d\d\d\d-\d\d-\d\d')
+    p7 = re.compile('\d{4}-\d{2}-\d{2}')
     # print p6.findall(str4)
     print p7.findall(str4)
 
@@ -191,13 +193,13 @@ if __name__ == '__main__':
     # print 'hello nowcoder'
     '''
     # comment
-    demo_string()
-    demo_operation()
-    demo_buildinfunction()
-    demo_condition()
-    demo_list()
-    demo_dict()
-    demo_set()
-    demo_exception()
-    demo_random()
+    # demo_string()
+    # demo_operation()
+    # demo_buildinfunction()
+    # demo_condition()
+    # demo_list()
+    # demo_dict()
+    # demo_set()
+    # demo_exception()
+    # demo_random()
     demo_re()
